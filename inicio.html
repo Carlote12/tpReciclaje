@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡No me tires! - Guía RAEE</title>
+    <style>
+        /* Estilos generales y fondo cuadriculado */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('fondocuadrado.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px; /* Ancho ideal para celulares */
+            margin: 0 auto;
+            padding: 1.5rem 1rem;
+        }
+
+        /* Estilo de las "tarjetas" sobre el fondo */
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border: 2px solid #333;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 4px 4px 0px #333; /* Sombra estilo retro/cómic */
+            text-align: center;
+        }
+
+        /* Imagen principal (El radiocasete) */
+        .hero-img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: #e84393;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: #0984e3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        /* Íconos de decoración y carpetas */
+        .icon-tech {
+            width: 50px;
+            height: auto;
+        }
+
+        .folder-icon {
+            width: 40px;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        .options-list {
+            text-align: left;
+            list-style: none;
+            padding: 0;
+        }
+
+        .options-list li {
+            background: #f1f2f6;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-weight: bold;
+        }
+
+        /* Botón de acción */
+        .btn {
+            display: inline-block;
+            background-color: #0984e3;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            border: 2px solid #333;
+            box-shadow: 2px 2px 0px #333;
+            margin-top: 10px;
+        }
+
+        .btn:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="card">
+            <h1>No me tires!.</h1>
+        </div>
+
+        <div class="card">
+            <h2>
+                <img src="decoracion1 (1).png" alt="Circuito" class="icon-tech">
+                ¿Por qué soy peligroso?
+            </h2>
+            <p>Por dentro, tengo componentes electrónicos, baterías y metales que, si tocan la tierra o el agua, son súper tóxicos para el medio ambiente.</p>
+        </div>
+
+        <div class="card">
+            <h2>Mis Opciones</h2>
+            <ul class="options-list">
+                <li>
+                    <img src="portafolio (1).png" alt="Carpeta cerrada" class="folder-icon">
+                    1. Reparar (¿Tengo arreglo?)
+                </li>
+                <li>
+                    <img src="portafolio (1).png" alt="Carpeta cerrada" class="folder-icon">
+                    2. Donar (Si funciono, regalame)
+                </li>
+                <li style="background-color: #ffeaa7; border-color: #fdcb6e;">
+                    <img src="portafolioabierto (1).png" alt="Carpeta abierta" class="folder-icon">
+                    3. Reciclar (Mi destino final)
+                </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>📍 Puntos Verdes</h2>
+            <p>En <strong>Villa Carlos Paz</strong>, podés llevar tu basura electrónica al Aula Ambiental o consultar el cronograma de recolección especial municipal.</p>
+            <a href="https://maps.google.com" target="_blank" class="btn">Abrir Mapa de Acopio</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

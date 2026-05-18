@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumobot</title>
+    <style>
+        /* Mantenemos los mismos estilos de tu página principal */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('fondocuadrado.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 1.5rem 1rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border: 2px solid #333;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 4px 4px 0px #333;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #e84393;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            color: #0984e3;
+        }
+
+        .materials-list, .steps-list {
+            text-align: left;
+            padding: 0;
+            list-style: none;
+        }
+
+        .materials-list li {
+            background: #f1f2f6;
+            margin-bottom: 10px;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-weight: bold;
+        }
+
+        .steps-list li {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        .btn-secondary {
+            display: inline-block;
+            background-color: #edf2f7;
+            color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            border: 2px solid #333;
+            box-shadow: 2px 2px 0px #333;
+            margin-top: 15px;
+        }
+
+        .btn-secondary:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px #333;
+        }
+        
+        .alert {
+            background-color: #ffeaa7;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #fdcb6e;
+            font-size: 0.9rem;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card sumobot">
+            <h1>¡Crea un Sumobot con mis partes!</h1>
+            <p>¿Sabías que podés crear un robot de batalla con mis partes viejas? Aunque no lo parezca, claro que se puede.¡Y es muy fácil!</p>
+        </div>
+
+        <div class="card">
+            <h2>¡Qué piesas necesitas!</h2>
+            <ul class="materials-list">
+                <li><strong>Motores DC:</strong> Sacalos del mecanismo que giraba los CD.</li>
+                <li><strong>Cables:</strong> Cortalos para hacer las conexiones.</li>
+                <li><strong>Plástico resistente:</strong> Cortá mi carcasa para hacer el chasis de tu robot.</li>
+            </ul>
+            <div class="alert">
+                <strong>Nota:</strong> Vas a necesitar sumar algunas cosas extras (como ruedas de algún juguete que no uses, pilas, un portapilas y un microcontrolador  ESP32).
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>¿Cómo armarlo?</h2>
+            <ol class="steps-list">
+                <li><strong>El Chasis:</strong> Cortá un cuadrado del plástico de la radio para usarlo como base. Tiene que ser resistente.</li>
+                <li><strong>Tracción:</strong> Pegá los motores a la base y luego ponle las ruedas a los motores .</li>
+                <li><strong>Conexión:</strong> Usá mis cables viejos para conectar los motores a un portapilas.</li>
+                <li><strong>Detalles:</strong>Decoralo como quieras.Puedes usar piesas de otros juegetes o pintarlo para que se vea cool</li>
+                <li><strong>¡A luchar!:</strong> El objetivo de un sumobot es empujar al otro fuera de un círculo. Poné peso en la parte delantera para tener ventaja.</li>
+            </ol>
+        </div>
+
+        
+    </div>
+    
+</body>
+</html>
