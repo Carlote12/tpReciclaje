@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto: Celular - Guía RAEE</title>
+    <style>
+        /* Estilos generales y fondo cuadriculado */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('fondocuadrado.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 1.5rem 1rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border: 2px solid #333;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 4px 4px 0px #333;
+            text-align: center;
+        }
+
+        .hero-img {
+            width: 100%;
+            max-width: 200px; /* Un poco más angosto porque es un celular */
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border: 2px solid #333;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #e84393;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: #0984e3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .icon-tech {
+            width: 50px;
+            height: auto;
+        }
+
+        .folder-icon {
+            width: 40px;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        .options-list {
+            text-align: left;
+            list-style: none;
+            padding: 0;
+        }
+
+        .options-list li {
+            background: #f1f2f6;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #0984e3;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            border: 2px solid #333;
+            box-shadow: 2px 2px 0px #333;
+            margin-top: 10px;
+        }
+
+        .btn-secondary {
+            background-color: #edf2f7;
+            color: #333;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            padding: 8px 16px;
+        }
+
+        .btn:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="card">
+            <h1>¡No me tires!</h1>
+            <p>Sabias que solo en Argentina se reciclan el 10% de los celulares que llegan al final de su vida útil.Y que a nivel mundial cada habitante genera 8 kilos de basura al año.Y que toda la humanidad genera alrededor de 62millones de toneladas  de basura electrónica al año!</p>
+        </div>
+
+        <div class="card">
+            <h2>
+                <img src="decoracion1 (1).png" alt="Circuito" class="icon-tech">
+                ¿Por qué soy peligroso?
+            </h2>
+            <p>Desechar un celular en la basura común es muy peligroso porque contiene metales pesados (plomo, mercurio, cadmio) y químicos tóxicos. Al descomponerse en vertederos, estos materiales contaminan el suelo y las napas de agua. Además, sus baterías de litio pueden incendiarse si se perforan o dañan. </p>
+        </div>
+
+        <div class="card">
+            <h2>¿Qué podés hacer conmigo?</h2>
+            <ul class="options-list">
+                <li>
+                    <img src="portafolio (1).png" alt="Carpeta" class="folder-icon">
+                    1. Reparar
+                </li>
+                <li>
+                    <img src="portafolio (1).png" alt="Carpeta" class="folder-icon">
+                    2. Donar
+                </li>
+                <li style="background-color: #ffeaa7; border-color: #fdcb6e;">
+                    <img src="portafolioabierto (1).png" alt="Carpeta abierta" class="folder-icon">
+                    3. Reciclar
+                </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>¿A dónde me llevás?</h2>
+            <p>En <strong>Villa Carlos Paz</strong>, tenés que llevarme a <strong>LA FÁBRICA. Punto Joven VCP</strong></p>
+            <a href="https://maps.google.com/?cid=6475741009162952368&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="btn">Ver en el Mapa</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
