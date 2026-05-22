@@ -1,76 +1,260 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deja un mensaje</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-            /* Fondo vuelto a la normalidad (cubre toda la pantalla) */
-            background: url('download (13).jpg') center/cover fixed;
-            color: #333;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deja un mensaje</title>
 
-        .caja {
-            background: rgba(255, 255, 255, 0.85);
-            max-width: 500px;
-            margin: 10vh auto;
-            padding: 30px 20px;
-            border-radius: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            position: relative;
-        }
+<style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background: url('download (13).jpg') center/cover fixed;
+    color: #333;
+    overflow-x: hidden;
+}
 
-        .deco {
-            position: absolute;
-            z-index: 10;
-        }
+/* CAJA PRINCIPAL */
+.caja {
+    background: rgba(255, 255, 255, 0.85);
+    max-width: 500vw;
+    margin: 15vh auto;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: visible;
+}
 
-        /* Stickers con tamaños variados para llenar los espacios */
-        .gatito { top: -40px; left: -20px; width: 120px; transform: rotate(-10deg); }
-        .globostar { top: -30px; right: -30px; width: 70px; transform: rotate(15deg); }
-        .floracuarela { bottom: -30px; left: -30px; width: 140px; transform: rotate(-5deg); }
-        .munequito { bottom: -20px; right: -10px; width: 60px; }
-        .boladisco { top: 40%; right: -50px; width: 90px; }
+/* TODOS LOS STICKERS */
+.deco {
+    position: absolute;
+    z-index: 10;
+    pointer-events: none;
+}
 
-        form { display: flex; flex-direction: column; gap: 15px; }
-        
-        input, textarea {
-            padding: 12px; width: 100%; box-sizing: border-box;
-            border: 2px solid #ffb6c1; border-radius: 10px;
-            background: #fff9fa; font-size: 16px;
-        }
-        
-        button {
-            padding: 12px; background: #ff69b4; color: white;
-            border: none; border-radius: 10px; font-size: 1.1em;
-            cursor: pointer; font-weight: bold; width: 100%;
-        }
-        button:hover { background: #ff1493; }
-    </style>
+/* STICKERS VIEJOS */
+.gatito { 
+    top: -55px; 
+    left: 20px; 
+    width: 1500vw; 
+    transform: rotate(-10deg); 
+}
+
+.globostar { 
+    top: 50px; 
+    right: 50px; 
+    width: 60px; 
+    transform: rotate(10deg); 
+}
+
+.floracuarela { 
+    bottom: -45px; 
+    left: -20px; 
+    width: 1600vw; 
+    transform: rotate(-8deg); 
+}
+
+.munequito { 
+    bottom: 180px; 
+    right: -25px; 
+    width: 105px; 
+}
+
+.boladisco { 
+    top: -105px; 
+    right: 250px; 
+    width: 90px; 
+}
+
+/* STICKERS NUEVOS */
+
+
+.angel { 
+    top: -50px; 
+    left: 300px; 
+    width: 200vw; 
+    transform: rotate(-15deg); 
+}
+
+
+.enojadito { 
+    bottom: 13%; 
+    left: 5px; 
+    width: 100px; 
+    transform: rotate(-10deg); 
+}
+
+.estrellita { 
+    top: 30px; 
+    left: 20%; 
+    width: 40px; 
+    transform: rotate(15deg);
+}
+
+.logopersona { 
+    bottom: 80px; 
+    left: 87%; 
+    width: 65px; 
+}
+
+.ojo { 
+    top: 94%; 
+    right: -5px; 
+    width: 150px; 
+    transform: rotate(8deg); 
+}
+/* PEZ */
+.pez{
+    position: absolute;
+
+    width: 250vw;
+    max-width: 200px;
+
+    bottom: -505px;
+    left: 55vw;
+
+    transform: rotate(-8deg);
+
+    z-index: 2;
+}
+
+/* ANGEL ESTATUA */
+.angelestatua{
+    position: absolute;
+
+    width: 500vw;
+    max-width: 300px;
+
+    bottom: -570px;
+    right: 40vw;
+
+    z-index: 1;
+}
+
+/* FORMULARIO */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ffb6c1;
+    border-radius: 10px;
+    background: #fff9fa;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px;
+    background: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff1493;
+}
+
+/* RESPONSIVE PARA CELULAR */
+@media (max-width: 600px) {
+
+    .caja {
+        margin-top: 10vh;
+        padding: 25px 15px;
+    }
+
+    .gatito {
+        width: 90px;
+        left: -35px;
+    }
+
+    .ballena {
+        width: 95px;
+        top: -55px;
+        right: 60px;
+    }
+
+    .torre {
+        width: 120px;
+        right: -70px;
+    }
+
+    .floracuarela {
+        width: 100px;
+    }
+
+    .angel {
+        width: 80px;
+    }
+
+    .snoppi {
+        width: 70px;
+        left: -60px;
+    }
+}
+</style>
 </head>
+
 <body>
 
-    <div class="caja">
-        <img src="Gatito.png" class="deco gatito">
-        <img src="globostar.png" class="deco globostar">
-        <img src="floracuarela.png" class="deco floracuarela">
-        <img src="muñequito.png" class="deco munequito">
-        <img src="boladisco.png" class="deco boladisco">
+<div class="caja">
 
-        <h1>Hola!!</h1>
-        <h2>¡Deja un mensaje!</h2>
-        
-        <form action="https://formspree.io/f/mbdbowyz" method="POST">
-            <input type="text" name="nombre" placeholder="Tu nombre (opcional)">
-            <textarea name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
-            <button type="submit">Enviar mensaje</button>
-        </form>
-    </div>
+    <!-- STICKERS -->
+    <img src="Gatito.png" class="deco gatito">
+    <img src="globostar.png" class="deco globostar">
+    <img src="floracuarela.png" class="deco floracuarela">
+    <img src="muñequito.png" class="deco munequito">
+    <img src="boladisco.png" class="deco boladisco">
+    <img src="angel.png" class="deco angel">
+    <img src="enojadito.png" class="deco enojadito">
+    <img src="estrellita.png" class="deco estrellita">
+    <img src="Logodepersona.png" class="deco logopersona">
+    <img src="ojo.png" class="deco ojo">
+    <img src="pez.png" class="deco pez">
+    <img src="angelestatua.png" class="deco angelestatua">
+
+
+    <!-- TEXTO -->
+    <h1>Hola!!</h1>
+    <h2>¡Deja un mensaje!</h2>
+
+    <!-- FORM -->
+    <form action="https://formspree.io/f/mbdbowyz" method="POST">
+
+        <input 
+            type="text" 
+            name="nombre" 
+            placeholder="Tu nombre (opcional)"
+        >
+
+        <textarea 
+            name="mensaje" 
+            rows="4" 
+            placeholder="Escribe tu mensaje aquí..." 
+            required
+        ></textarea>
+
+        <button type="submit">
+            Enviar mensaje
+        </button>
+
+    </form>
+
+</div>
 
 </body>
 </html>
